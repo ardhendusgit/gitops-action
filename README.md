@@ -1,23 +1,25 @@
-# Prerequisites
-#####
-- JDK 11
-- Maven 3
-- MySQL 8 
+# GitOps-Setting up the Application
 
-# Technologies 
-- Spring MVC
-- Spring Security
-- Spring Data JPA
-- Maven
-- JSP
-- MySQL
-# Database
-Here,we used Mysql DB 
-MSQL DB Installation Steps for Linux ubuntu 14.04:
-- $ sudo apt-get update
-- $ sudo apt-get install mysql-server
+## Setting Up SonarCloud
 
-Then look for the file :
-- /src/main/resources/db_backup.sql
-- db_backup.sql file is a mysql dump file.we have to import this dump to mysql db server
-- > mysql -u <user_name> -p accounts < db_backup.sql
+We'll go to SonarCloud to create our organization, project, and token. We'll then store this token securely in GitHub Secrets.
+
+## Application Deployment
+
+Our deployment file includes the image name and tag. While we can't directly add variables here, we'll use Helm charts, which support variables that can be passed at runtime.
+
+## GitHub Workflow Configuration
+
+In our GitHub workflow, we need to define some environment variables such as `AWS_REGION` and `ECR_REPOSITORY` all of which can be found in the workflow file.
+
+## Important note on Quality Gates
+- One might encounter a quality gate not setup error while executing the workflow which can be resolved by following:
+
+### Quality Gates Setup
+
+Within our SonarCloud organization, we can create custom quality gates. Follow these steps:
+
+1. Navigate to SonarCloud and go to your organization.
+2. Access the quality gates section.
+3. Create a new quality gate, such as `sample-quality-gate`.
+4. Save the settings and add relevant rules.
