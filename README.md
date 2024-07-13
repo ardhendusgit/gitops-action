@@ -10,7 +10,7 @@ We'll go to SonarCloud to create our organization, project, and token. We'll the
 
 Our deployment file includes the image name and tag. While we can't directly add variables here, we'll use Helm charts, which support variables that can be passed at runtime.
 
-## GitHub Workflow Configuration
+## Environment Variables
 
 In our GitHub workflow, we need to define some environment variables such as `AWS_REGION` and `ECR_REPOSITORY` all of which can be found in the workflow file.
 
