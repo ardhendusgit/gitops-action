@@ -1,5 +1,7 @@
 # GitOps-Setting up the Application
 
+Here, we set up the application end of the GitOps project. The infrastructure workflow associated code can be found [here](https://github.com/ardhendusgit/IAC-AWS).
+
 ## Setting Up SonarCloud
 
 We'll go to SonarCloud to create our organization, project, and token. We'll then store this token securely in GitHub Secrets.
