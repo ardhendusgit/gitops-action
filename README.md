@@ -1,6 +1,6 @@
 # GitOps-Setting up the Application
 
-Here, we set up the application end of the GitOps project. The infrastructure workflow associated code can be found [here](https://github.com/ardhendusgit/IAC-AWS).
+Here, we set up the application end of the GitOps project. The infrastructure workflow-associated code can be found [here](https://github.com/ardhendusgit/IAC-AWS).
 
 ## Setting Up SonarCloud
 
