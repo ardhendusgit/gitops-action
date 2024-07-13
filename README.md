@@ -15,7 +15,7 @@ Our deployment file includes the image name and tag. While we can't directly add
 In our GitHub workflow, we need to define some environment variables such as `AWS_REGION` and `ECR_REPOSITORY` all of which can be found in the workflow file.
 
 ## Important note on Quality Gates
-- One might encounter a quality gate not setup error while executing the workflow which can be resolved by following:
+One might encounter a quality gate not setup error while executing the workflow which can be resolved by following:
 
 ### Quality Gates Setup
 
